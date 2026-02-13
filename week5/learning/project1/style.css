@@ -1,0 +1,12 @@
+h1 {
+    color: red;
+    text-align: center;
+    font-family: 'Playwrite NZ Basic Guides', cursive;
+    background-color: lightgray;
+    padding: 50px;
+}
+
+img{
+    display: block;
+    margin: auto;
+}

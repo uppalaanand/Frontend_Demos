@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- form -->
+    <form>
+        <!-- username -->
+         <div>
+            <label for="un">Username : </label>
+            <input type="text" name="username" id="un" placeholder="Nee mudhu peru kottu" required  >
+         </div>
+        <div>
+            <label for="ps">Password : </label>
+            <input type="password" name="password" id="ps">
+        </div>
+        <div>
+            <label for="em">Email : </label>
+            <input type="email" name="email" id="em">
+         </div>
+         <div>
+            <label for="dob">Date of birth : </label>
+            <input type="date" name="dob" id="dob">
+         </div>
+         <!-- skills -->
+            <div>
+                <label for="skills">Skills : </label>
+                <input type="checkbox" name="skills" id="html" value="HTML">
+                <label for="html">HTML</label>
+                <input type="checkbox" name="skills" id="css" value="CSS">
+                <label for="css">CSS</label>
+                <input type="checkbox" name="skills" id="js" value="JS">
+                <label for="js">JS</label>
+            </div>
+            <!-- Gender -->
+            <div>
+                <label for="gender">Gender : </label>
+                <input type="radio" name="gender" id="male" value="Male   ">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">Female</label>
+            </div>
+            <!-- states -->
+            <div>
+                <label for="states">States : </label>
+                <select name="states" id="states">
+                    <option value="">Select State</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                </select>
+            </div>
+         <!-- submit button -->
+         <input type="submit">
+    </form>
+</body>
+</html>
