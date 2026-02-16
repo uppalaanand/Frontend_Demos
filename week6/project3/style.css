@@ -9,10 +9,10 @@ body {
     justify-content: center;
     align-items: center;
     background-color: slategrey;
-    height: 100vh;
+    height: 1000px;
 }
 
-div {
+.parent {
     background-color: beige;
     border: 2px solid black;
     width: 250px;
@@ -23,6 +23,7 @@ div {
     align-items: center;
     text-align: center;
     padding: 20px;
+    position: relative;
 }
 
 h6 {
@@ -36,4 +37,20 @@ img {
     border-radius: 50%;
     width: 50%;
     height: 100px;
+}
+
+.img1 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0.1px;
+    right: 0.1px;
+}
+
+.insta {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }

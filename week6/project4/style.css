@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    border: 2px solid black;
+    height: 600px;
+    position: relative;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+}
+
+.child1 {
+    background-color: orange;
+    position: absolute;
+    left: 100px;
+}
+
+.child2 {
+    background-color: blue;
+    position: sticky;
+    top: 100px;
+}
+.child3 {
+    background-color: greenyellow;
+    position: fixed;
+}

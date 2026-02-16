@@ -1,0 +1,82 @@
+/* @media screen  and (max-width:500px){
+    body {
+        background-color: green;
+    }
+    img {
+        display: none;
+    }
+}
+
+@media screen  and (min-width:500px){
+    body {
+        background-color: red;
+    }
+}
+
+@media screen  and (min-width:701px){
+    body {
+        background-color: green;
+    }
+} */
+
+/* landscape
+@media screen  and (orientation:landscape){
+    body {
+        background-color: green;
+    }
+}
+portrait
+@media screen  and (orientation:portrait){
+    body {
+        background-color: red;
+    }
+} */
+
+/* body {
+    background-color: black;
+    color: white;
+}
+printing pages
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+    img {
+        display: none;
+    }
+} */
+
+.h {
+    display: none;
+}
+.b {
+    display: none;
+}
+.c {
+    display: none;
+}
+
+@media screen and (min-width:500px) {
+    .h {
+        display: block;
+    }
+    .b {
+        display: none;
+    }
+}
+
+@media screen and (min-width:701px) {
+    .b {
+        display: block;
+    }
+    .h {
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .c {
+        display: block;
+    }
+}
