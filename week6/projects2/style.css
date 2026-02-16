@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    border: 10px solid black;
+    width: 600px;
+    padding: 100px 50px 40px 30px;
+    margin: 50px;
+}
+
+/* h1 {
+    width: 600px;
+    height: 300px;
+}
+
+a {
+    display: block;
+    display: inline-block;
+    width: 600px;
+    height: 100px;
+} */
+
+img {
+    display: block;
+    margin: auto;
+}
