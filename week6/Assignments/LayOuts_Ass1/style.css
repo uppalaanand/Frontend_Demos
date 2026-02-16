@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    height: 50vh;
+    background-color: rgb(174, 166, 155);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 8vw;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header button {
+    border: none;
+    background-color: blue;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+}
+
+.card {
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.row {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.card button {
+    border: none;
+    background-color: gray;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+}
+
+.card h5 {
+    font-size: 30px;
+}
+
+hr {
+    width: 80vw;
+    margin: 0px 8vw;
+}
+
+.foot {
+    margin-left: 120px;
+}
