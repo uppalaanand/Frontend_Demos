@@ -77,3 +77,29 @@
         flex-grow : 1;
         flex-shrink : 2;
         flex-wrap : wrap;
+        flex-basis : 300px;     => initial width
+
+
+### CSS Colors
+
+        1. named colors
+        2. hexa-decimal (#6digits)      2 => red  2 => green  2=> blue
+        3. rgb()
+        4. hsl()            # hue-saturation-light
+
+* 255 is the maximum value for any color.
+
+### CSS Variables
+
+        1. use :root within this create variables.
+        2. every variable starts with --
+        3. Ex : --botton-color : #;
+        4. To use variables use var() function.
+
+### Responsive text
+        1. use clamp() function
+        2. it accepts 3 parameters (min, 10vw, max)
+        4. Ex : font-size : clamp(1rem, 10vw, 5rem)
+
+### Responsive Image
+        1. use max-width : <fixed size>

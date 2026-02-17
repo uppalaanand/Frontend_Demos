@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* :root {
+     define a variable 
+    --heading-color : #fdc969;
+    --button-color : rgb(16, 16, 39);
+} */
+
+/* h1 {
+    color: var(--heading-color);
+} */
+
+h1 {
+    font-size: clamp(1rem, 10vw, 5rem);
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+}
+
+
