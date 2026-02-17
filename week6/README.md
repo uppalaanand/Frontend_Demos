@@ -103,3 +103,34 @@
 
 ### Responsive Image
         1. use max-width : <fixed size>
+
+### CSS Grid
+        When we want to organize the data vertically and horigebtally we uses this grid
+
+                        header
+        ___________________________________
+                |        content1
+                |__________________________
+        sidebar |content2    |   content3
+        ________|____________|______________
+                        footer
+
+        ### Terminologies
+                1. Grid Lines
+                2. Grid cell
+                3. Grid track   =>      one single row
+                4. Grid area
+
+display : grid;
+grid-template-columns : 100px 100px 1fr 1fr;
+grid-temolate-rows : 1fr 1fr 100px;
+gap : 10px;
+
+grid-column-start: 1;
+grid-column-end: 3;
+sortcut : grid-column: 1 / 3;
+
+grid-row-start: 1;
+grid-row-end: 3;
+shortcut : grid-row: 1 / 3;
+
