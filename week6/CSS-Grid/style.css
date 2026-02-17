@@ -5,7 +5,9 @@
 }
 
 .parent {
-    width: 800px;
+    /* width: 800px; */
+    width: 100%;
+    max-width: 800px;
     height: 700px;
     margin: auto;
     margin-top: 10px;
@@ -60,4 +62,17 @@
     grid-column: 1 / 3;
     grid-row: 4 / 5;
     background-color: lightgreen;
+}
+
+@media screen and (max-width : 600px) {
+    /* stacked view */
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .parent > div {
+        grid-column: auto;
+        grid-row: auto;
+    }
 }
