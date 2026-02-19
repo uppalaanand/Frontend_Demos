@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    height: 50px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    font-size: 24px;
+    color: red;
+}
+
+/* HERO SECTION */
+main {
+    height: 65vh;
+    background-color: #E60000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    color: white;
+}
+
+.names {
+    max-width: 500px;
+}
+
+.names h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.names p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.logo img {
+    width: 220px;
+}
+
+/* BOTTOM CARDS */
+.cards {
+    display: flex;
+    height: 30vh;
+}
+
+.card {
+    flex: 1;
+    background-color: #7A0C0C;
+    color: white;
+    padding: 40px;
+    border-right: 2px solid #E60000;
+}
+
+.card:last-child {
+    border-right: none;
+}
+
+.card h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
