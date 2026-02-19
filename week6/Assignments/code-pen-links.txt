@@ -1,0 +1,14 @@
+1. LayOuts_Ass1 :
+https://codepen.io/ananduppala1/pen/myEZaxY
+
+2. LayOuts_Ass2 :
+https://codepen.io/ananduppala1/pen/ByzgMNz
+
+3. Layouts_Ass3 :
+https://codepen.io/ananduppala1/pen/zxBVeRb
+
+4. CSS-Grid-Ass1 : 
+https://codepen.io/ananduppala1/pen/PwzrLwO
+
+5. CSS-Grid-Ass2 :
+https://codepen.io/ananduppala1/pen/azZgMbz
