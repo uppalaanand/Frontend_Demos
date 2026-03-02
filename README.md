@@ -133,3 +133,16 @@ Test API's Mock Data    :   https://jsonplaceholder.typicode.com/users
             import { useLocation } from 'react-router'
             const {state} = useLocation();
             console.log(state.product);
+
+### State Management
+    => State management means:
+    1. Sharing state across the application, if it requires
+    2. maintaining/acheive the sync across the application.
+
+    1. Context - state management(small application)
+    2. Library - (Rudex)large application
+
+
+### Context API -   It is a state management mechanism, which Solves the problem of prop-drilling
+
+        Context Provider - (like a storage)Stores State/Data, So that any component can use data without props
