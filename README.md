@@ -89,7 +89,35 @@ Extension for boiler plate of react component : ES7+snippets
             useEffect(() => {}, )
 
 Test API's Mock Data    :   https://jsonplaceholder.typicode.com/users
-    
-    
+
+
+
+
+### Date : 02-03-2026
+
+### Routing
+    Step 1 : Design Root Layout
+                  Ex : Header, main, Footer
+
+    Step 2 : Install React Router Module   -   v7
+                npm install react-router
+
+    Step 3 : Create all required components in /components folder
+                Ex : Home, Login, Register, Technology, Nodejs, Java, 
+
+    Step 4 : Configure the Routing For above Components( Connecting components to parent with its path )
+                1. import { createBrowserRouter, RouterProvider } from 'react-router'
+                2. function App() {
+                            // routing configuration
+                            const routingObj = createBrowserRouter([
+                                {
+                                path : "/",
+                                element : <RootLayout />,
+                                children : <children-routes>        -- Optional
+                                }
+                            ]);
+
+                        return <RouterProvider router={routingObj} />
+                    }
 
 
