@@ -7,13 +7,13 @@ function Header() {
       <img width="100px" className='rounded-4xl' src="https://img.freepik.com/premium-vector/online-shop-e-commerce-logo_1199645-37307.jpg?semt=ais_user_personalization&w=740&q=80" alt="" />
       <ul className='flex gap-10'>
         <li>
-          <NavLink to='home' >Home</NavLink>
+          <NavLink to='/' className={({isActive}) =>isActive?"text-orange-400":""}>Home</NavLink>
         </li>
         <li>
-          <NavLink to="products">Products</NavLink>
+          <NavLink to="products" className={({isActive}) =>isActive?"text-orange-400":""}>Products</NavLink>
         </li>
         <li>
-          <NavLink to="contact" >Contact</NavLink>
+          <NavLink to="contact" className={({isActive}) =>isActive?"text-orange-400":""}>Contact</NavLink>
         </li>
       </ul>
     </div>

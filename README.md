@@ -121,3 +121,15 @@ Test API's Mock Data    :   https://jsonplaceholder.typicode.com/users
                     }
 
 
+### useLocation() - from where i came here
+        Ex : Products -> ProductPage
+
+        --- To send data to other Page
+            import { useNavigate } from "react-router";
+            const navigate = useNavigate();
+            navigate("/product", {state:{product : productObj}});
+
+        --- To receive that data
+            import { useLocation } from 'react-router'
+            const {state} = useLocation();
+            console.log(state.product);

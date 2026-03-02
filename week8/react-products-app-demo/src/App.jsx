@@ -4,6 +4,7 @@ import Home from './components/Home';
 import RootLayout from './components/RootLayout';
 import Products from './components/Products';
 import Contactus from './components/Contactus';
+import ProductPage from './components/ProductPage';
 
 function App() {
   const configObj = createBrowserRouter([
@@ -22,6 +23,10 @@ function App() {
         {
           path : "contact",
           element : <Contactus />
+        },
+        {
+          path : "product",
+          element : <ProductPage />
         }
       ]
     }
