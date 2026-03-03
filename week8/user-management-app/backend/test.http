@@ -20,3 +20,7 @@ GET http://localhost:5000/user-api/user/69a691085c0035ad2d899caa
 ###
 # Update a User by ID
 DELETE http://localhost:5000/user-api/user/69a6820ae456cdd404474390
+
+###
+# make user active
+PATCH http://localhost:5000/user-api/user/69a6820ae456cdd404474390

@@ -20,7 +20,8 @@ userApp.post("/users", async (req, res) => {
 
 // 2. Read all users
 userApp.get("/users", async (req, res) => {
-    let users = await UserModel.findOne({status : true});
+    // let users = await UserModel.findOne({status : true});
+    let users = await UserModel.find({});
     res.status(200).json({message:"Users", payload : users});
 });
 
@@ -38,10 +39,25 @@ userApp.get("/user/:id", async (req, res) => {
 
 // 4. Delete a user by id
 userApp.delete("/user/:id", async (req, res) => {
+    //get the user id
     let { id } = req.params;
-    let user = await UserModel.findByIdAndUpdate(id, {status : false});
+    //get the user from db
+    let user = await UserModel.findByIdAndUpdate(id, {$set :{status : false}}, {new : true});
+    //if user not found
     if(!user) {
         return res.status(404).json({message : "user not found"});
     }
+    //send response
     res.status(200).json({message : "User Found", payload : user});
+});
+
+//5. Make user Active
+//PUT(complete change in the resourse) vs PATCH(when only partial change)
+userApp.patch("/user/:id", async (req, res) => {
+    //get user id
+    let { id } = req.params;
+    //get the user from db
+    let user = await UserModel.findByIdAndUpdate(id, {$set :{status : true}}, { new : true});
+    //send response
+    res.status(200).json({message : "User Activated", payload : user});
 })
