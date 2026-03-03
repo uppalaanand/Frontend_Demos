@@ -146,3 +146,27 @@ Test API's Mock Data    :   https://jsonplaceholder.typicode.com/users
 ### Context API -   It is a state management mechanism, which Solves the problem of prop-drilling
 
         Context Provider - (like a storage)Stores State/Data, So that any component can use data without props
+
+
+### Date : 03-03-2026
+
+    => State Management =>  Context API
+        Steps :
+        1. Create Context Object, then react provides two Provider, Consumer
+               Ex:  import {createContext} from 'react';
+                    export const CounterContext = createContext();
+
+        2. Every Context Object has a Context Provider and Context consumer.
+        3. Context Provider is used to Provide State through context object, where as the components can consume the state through context      object.
+                Ex: (Provider)//value contains js object
+
+                    <CounterContext.Provider value={{counter1, changeCounter}}>
+                        {children}
+                    </CounterContext.Provider>
+
+        4. A Component can consume the State of context Provider with useContext() Hook.
+                Ex: Consumer
+
+                    import { useContext } from 'react';
+                    import { CounterContext } from '../context/counterContext.js';
+                    let {counter1, changeCounter} = useContext(CounterContext);
