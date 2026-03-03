@@ -4,6 +4,7 @@ import { CounterContext } from '../context/counterContext'
 
 function C() {
   const {counter1, changeCounter} = useContext(CounterContext);
+  console.log("Component C");
   return (
     <div className='text-center shadow-2xl p-20'>
       <h1 className='text-3xl font-bold mb-5'>Component A</h1>

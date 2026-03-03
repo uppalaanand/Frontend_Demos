@@ -170,3 +170,18 @@ Test API's Mock Data    :   https://jsonplaceholder.typicode.com/users
                     import { useContext } from 'react';
                     import { CounterContext } from '../context/counterContext.js';
                     let {counter1, changeCounter} = useContext(CounterContext);
+
+        Note : one context should not have more than more then 1 states.
+
+### Create user context object and provider
+
+    User State
+    {
+        name : "anand",
+        age : 20,
+        email: "ravi@gmail.com
+    }
+
+    & function to modify User by updating a properties
+
+    Consume This Context in Components A and B Update from both
