@@ -185,3 +185,20 @@ Test API's Mock Data    :   https://jsonplaceholder.typicode.com/users
     & function to modify User by updating a properties
 
     Consume This Context in Components A and B Update from both
+
+
+### Create Backend with User REST API, with below operations
+    1. Create new User
+    2. Read all users
+    3. Read a user by id
+    4. Delete a user by id
+
+    User Schema =>  {name, email, dob, mobile no}
+
+    Create a React APP by work, which above API
+
+                    APP
+      |         |           |        | 
+    Home    AddUser     UsersList   User
+
+    1. Home component need to be loaded when app launch
