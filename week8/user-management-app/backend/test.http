@@ -1,0 +1,22 @@
+# Create a new User
+POST http://localhost:5000/user-api/users
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "test1@gmail.com",
+    "dob" : "1990-01-01",
+    "mobileNumber": "1234567890"
+}
+
+###
+# Get all Users
+GET http://localhost:5000/user-api/users
+
+###
+# get a User by ID
+GET http://localhost:5000/user-api/user/69a691085c0035ad2d899caa
+
+###
+# Update a User by ID
+DELETE http://localhost:5000/user-api/user/69a6820ae456cdd404474390
