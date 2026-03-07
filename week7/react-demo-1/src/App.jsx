@@ -11,7 +11,7 @@ function App() {
   //return a react element
   return (
     <div className='text-center border-2 p-24 bg-gray-100'>
-      {/* <h1 className='text-5xl '>Welcome To App</h1> */}
+      <h1 className='text-5xl '>Welcome To App</h1>
       {/* State Demo */}
       {/* <StateDemo /> */}
       {/* Form Demo */}
