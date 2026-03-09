@@ -205,4 +205,69 @@ Test API's Mock Data    :   https://jsonplaceholder.typicode.com/users
 
 
 ### PUT(complete change in the resourse) vs PATCH(when only partial change)
-    
+
+### Date : 09-03-2026
+
+### State management using Redux, Zustand
+### Using Zustand
+
+    1. Create a global store and keep state in it.
+
+    1. Intall Zustand
+        npm i zustand
+
+    2. Create Zustand Store
+        /store
+            |
+            -/testStore.js
+
+                1. To create Store 
+                    import { create } from 'zustand';
+
+                    //Create global Store
+                    export const useTest = create((set) => ({
+                        //state
+                        x:10,
+                        //functions to modify state
+                        increment:() => set((state) => ({x:state.x+1})),
+                        decrement:() => set(state=>({x:state.x-1}))
+                    }));   //=>  returns hook
+
+    3. To use 
+        const {y, incrementY, decrementY} = useTest()
+
+Virtual DOM 
+*Note : React do not touch the real DOM directly
+### useRef() hook => used to access element directly from DOM  /  changes value but not re-renders the component
+
+    1. To make TextFeild auto Focus directly when component renders
+
+        import React, { useRef } from 'react'
+        let inputRef = useRef(null);
+
+        useEffect(() => {
+            //side effects
+            inputRef.current.focus();
+        }, [])
+
+        <input ref={inputRef} type="text" name="" id="" className='border-2 my-5 p-2'/>
+
+    2. Inorder to auto play video on renders
+        Same as above but use .play() inplace of .focus().
+
+
+### closure = > it remembers the previous state value
+            function count() {
+                let counter = 0;
+                return function() {
+                    counter++;
+                    return counter;
+                }
+            }
+
+            let x = count();
+            console.log(x());
+            console.log(x());
+            console.log(x());
+
+function sum(...a)    rest parameter /    It is used to take/accept any number of parametes as an array
