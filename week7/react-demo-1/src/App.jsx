@@ -17,8 +17,8 @@ function App() {
       {/* Form Demo */}
       {/* <FormDemo /> */}
       {/* Task Management System */}
-      {/* <TaskManager /> */}
-      <SideEffectsUseEffect />
+      <TaskManager />
+      {/* <SideEffectsUseEffect /> */}
     </div>
   )
 }
