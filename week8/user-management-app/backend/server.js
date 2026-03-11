@@ -6,7 +6,6 @@ import cors from 'cors';
 
 config();
 
-
 //Create http Server
 const app = Express();
 app.use(cors({
