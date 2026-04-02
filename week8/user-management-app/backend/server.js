@@ -20,9 +20,9 @@ async function connectDB() {
         await connect(`${process.env.MONGO_URI}`);
         console.log("Moongodb is connected");
 
-        app.listen(process.env.PORT, () => {
-            console.log(`Server is running in PORT ${process.env.PORT}`);
-        })
+        // app.listen(process.env.PORT, () => {
+        //     console.log(`Server is running in PORT ${process.env.PORT}`);
+        // })
     }catch(err) {
         console,log("Error is", err);
     }
@@ -63,3 +63,5 @@ app.use((err, req, res, next) => {
     message: "Internal Server Error",
   });
 });
+
+export default app;
