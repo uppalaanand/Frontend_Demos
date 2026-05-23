@@ -24,7 +24,7 @@ async function connectDB() {
         //     console.log(`Server is running in PORT ${process.env.PORT}`);
         // })
     }catch(err) {
-        console,log("Error is", err);
+        console.log("Error is", err);
     }
 }
 connectDB();
